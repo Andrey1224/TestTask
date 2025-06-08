@@ -25,10 +25,7 @@ alembic upgrade head
 uvicorn app.main:app --reload
 
 .env file 
-# SQLite
 MYSQL_URL="sqlite+aiosqlite:///./test.db"
-# MySQL
-# MYSQL_URL="mysql+aiomysql://user:pass@host/dbname"
 JWT_SECRET="my_super_secret_key"
 JWT_ALG="HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES=60
